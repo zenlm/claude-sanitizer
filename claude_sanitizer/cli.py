@@ -6,12 +6,11 @@ Uses Claude to intelligently detect and redact sensitive data
 
 import json
 import os
-import re
 from pathlib import Path
 from datetime import datetime
 import click
 from rich.console import Console
-from rich.progress import track, Progress, SpinnerColumn, TextColumn
+from rich.progress import Progress, SpinnerColumn, TextColumn
 from rich.table import Table
 from rich.panel import Panel
 import anthropic

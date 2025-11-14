@@ -43,6 +43,7 @@ class TestSensitiveKeywordDetection:
         entry = {"content": "function calculateTotal(items) { return sum; }"}
         # This might have 'total' but context is safe
         # The AI layer will determine it's safe
+        assert not any(kw in entry["content"].lower() for kw in SENSITIVE_KEYWORDS if kw not in ["function", "return"])
 
 
 class TestClaudeSanitization:
