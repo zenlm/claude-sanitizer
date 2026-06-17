@@ -1,4 +1,4 @@
-# claude-sanitizer — AI Assistant Context
+# claude-sanitizer
 
 # 🔐 Claude Sanitizer
 
